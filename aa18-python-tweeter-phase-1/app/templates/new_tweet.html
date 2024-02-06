@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1>Create a New Tweet!</h1>
+<div class="tweet">
+    <form style="display: flex; flex-direction: column; align-items: center;">
+        
+        {{form.hidden_tag()}}
+        <p><h4>Author: {{form.author}}</h4></p>
+        <p>Tweet: {{form.tweet}}</p>
+        <p style="color: red">{{form.submitButton}}</p>
+    </form>
+</div>
+
+{% endblock %}
